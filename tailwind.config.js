@@ -4,11 +4,11 @@ module.exports = {
     colors: {
       sage: 'rgb(121, 180, 183)',
       cream: {
-        light: 'rgb(254, 251, 243)',
-        DEFAULT: 'rgb(241, 236, 226)',
+        light: 'rgb(253, 242, 248)',
+        DEFAULT: 'rgb(220, 164, 150)',
       },
-      grey: 'rgb(157, 157, 157)',
-      black: 'rgb(38,38,38)',
+      grey: 'rgb(4, 120, 87)',
+      black: 'rgb(21, 36, 31)',
     },
 
     extend: {
@@ -32,6 +32,10 @@ module.exports = {
         175: '1.75',
         200: '2.00',
       },
+      fontFamily: {
+        cormorant: ["cormorant-garamond", "serif"],
+        nautica: ["nautica", "sans-serif"]
+      }
     },
   },
   plugins: [

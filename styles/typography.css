@@ -1,11 +1,13 @@
-@import url('https://use.typekit.net/fuj4isr.css');
+@import url('https://use.typekit.net/fxv4rhg.css');
 @tailwind utilities;
 
 @layer utilities {
+
   html,
   body {
-    font-family: rustica, sans-serif;
+    font-family: nautica, sans-serif;
   }
+
   h1 {
     @apply font-bold;
   }
@@ -14,7 +16,9 @@
     color: inherit;
     text-decoration: none;
   }
+
   p {
+    font-family: halcom, serif;
     @apply text-xl text-black text-opacity-75 max-w-3xl mb-3 mt-3 leading-relaxed;
   }
 }

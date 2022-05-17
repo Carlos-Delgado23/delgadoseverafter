@@ -5,30 +5,26 @@ const Meta = () => {
   return (
     <>
       <NextSeo
-        title='Bergen + Jordan 4Ever'
-        description='Bergen Johnston and Jordan Lambrecht got Secret Married on June 28th, 2020. Now they&apso;re celebrating with lunch.'
+        title='Carlos & Seanna'
+        description='Carlos Delgado and Seanna M. Libby are getting Married on November 21, 2022!'
         openGraph={{
           url: 'https://www.opeweeloped.us',
           type: 'website',
           locale: 'en_IE',
-          site_name: 'Bergen + Jordan 4Ever',
+          site_name: 'Carlos & Seanna',
           title: 'Home',
           description:
-            'Bergen Johnston and Jordan Lambrecht got Secret Married on June 28th, 2020. Now they&apso; celebrating with lunch.',
+            'Carlos Delgado and Seanna M. Libby are getting Married on November 21, 2022!',
           images: [
             {
-              url: '/img/jordan-lambrecht-bergen-johnston_01.jpg',
+              url: '/img/kiss-trees.jpg',
               width: 1080,
               height: 1080,
-              alt: 'Bergen Johnston and Jordan Lambrecht',
+              alt: 'Carlos Delgado and Seanna M. Libby',
               type: 'image/jpeg',
             },
           ],
-          site_name: 'Ope We Eloped',
-        }}
-        twitter={{
-          handle: '@jlambrecht265',
-          cardType: 'summary_large_image',
+          site_name: 'Delgado Wedding',
         }}
       />
     </>

@@ -5,7 +5,7 @@ function Button_Filled({ url, text, className }) {
     <Link href={url} passHref>
       <a
         className={cn(
-          'text-center inline-block mt-4 font-medium rounded-md text-lg px-6 py-2 bg-black text-cream-light drop-shadow-sm duration-300 ease-in-out hover:scale-95',
+          `font-cormorant text-center inline-block mt-4 font-medium rounded-md text-lg px-6 py-2 bg-black text-cream-light drop-shadow-sm duration-300 ease-in-out hover:scale-95`,
           [`${className}`],
         )}
         rel='noOpener'

@@ -12,79 +12,49 @@ function Registry({ num }) {
 
         <ul className='grid grid-cols-1 gap-8'>
           <li>
-            <p className='font-semibold mt-0 pt-0  leading-none mb-0 pb-0'>Kids? We Bring?</p>{' '}
-            <p className='mt-1'>Only if they&apos;re chill.</p>
+            <p className='pt-0 pb-0 mt-0 mb-0 text-2xl font-semibold leading-none font-cormorant'>What to wear?</p>
+            <p className='mt-1 mb-0 font-cormorant'>Formal/Cocktail attire</p>
+            <p className='pt-0 mt-1 mb-0 capitalize font-cormorant'>**Please do not wear white**</p>
           </li>
           <li>
-            <p className='font-semibold mb-0 pb-0  mt-0 pt-0  leading-none '>Weather ?</p>{' '}
-            <p className='mt-1'>
-              Maybe.{' '}
+            <p className='pt-0 pb-0 mt-0 mb-0 text-2xl font-semibold leading-none font-cormorant '>Outdoor or Indoor?</p>
+            <p className='mt-1 font-cormorant'>
+              The ceremony will take place outside and the reception will follow afterwards indoors
+            </p>
+          </li>
+          <li>
+            <p className='pt-0 pb-0 mt-0 mb-0 text-2xl font-semibold leading-none font-cormorant '>Parking?</p>
+            <p className='mt-1 font-cormorant'>
+              All parking will be at the location
+            </p>
+          </li>
+          <li>
+            <p className='pt-0 pb-0 mt-0 mb-0 text-2xl font-semibold leading-none font-cormorant '>Kids?</p>
+            <p className='mt-1 font-cormorant'>
+              We prefer, if you are able, to leave children with a sitter for the evening.
+            </p>
+            <p className='mt-1 font-cormorant'>If you are bringing small children we ask that you please sit towards the back of the ceremony near the reception hall.</p>
+            <p className='mt-2 mb-0 font-cormorant'>Babysitter recommendation service: Northside Sitters</p>
+            <p className='my-0 font-cormorant'>www.northsidesittersclub.com</p>
+            <p className='my-0 font-cormorant'>210-710-7940</p>
+          </li>
+          <li>
+            <p className='pt-0 pb-0 mt-0 mb-0 text-2xl font-semibold leading-none font-cormorant '>Cell Phones?</p>
+            <p className='mt-1 font-cormorant'>
+              We ask all guests to please put their cellphones & cameras away during the ceremony.
+            </p>
+          </li>
+          <li>
+            <p className='pt-0 pb-0 mt-0 mb-0 text-2xl font-semibold leading-none font-cormorant'>Photographer?</p>{' '}
+            <p className='mt-1 font-semibold font-cormorant'>
               <a
-                href='https://weather.com'
-                target={'_blank'}
-                rel='noopener noreferrer'
-                className='border-b hover:text-opacity-75'
-              >
-                www.weather.com
-              </a>
-            </p>
-          </li>
-          <li>
-            <p className='font-semibold mb-0 pb-0  mt-0 pt-0  leading-none '>Can I do...</p>
-            <p className='mt-1'>Probably.</p>
-          </li>
-          <li>
-            <p className='font-semibold mb-0 pb-0  mt-0 pt-0  leading-none '>Photographer?</p>{' '}
-            <p className='mt-1'>
-              <a
-                href='https://instagram.com/intrepidvisuals'
-                target={'_blank'}
-                rel='noreferrer'
-                className='border-b hover:text-opacity-75'
-              >
-                @intrepidvisuals
-              </a>
-            </p>
-          </li>
-          <li>
-            <p className='font-semibold mb-0 pb-0  mt-0 pt-0  leading-none '>
-              Is there anything to do in Nebraska?
-            </p>
-            <p className='mt-1'>Yes – attend our brunch. See section above.</p>
-          </li>
-          <li>
-            <p className='font-semibold mb-0 pb-0  mt-0 pt-0  leading-none '>
-              McDonald&apos;s Hashbrowns?
-            </p>
-            <p className='mt-1'>Yes.</p>
-          </li>
-          <li>
-            <p className='font-semibold mb-0 pb-0  mt-0 pt-0  leading-none '>
-              Awkward Glass Clinking?
-            </p>{' '}
-            <p className='mt-1'>No.</p>
-          </li>
-          <li>
-            <p className='font-semibold mb-0 pb-0  mt-0 pt-0  leading-none '>
-              What’s the deal with covid-19?
-            </p>
-            <p className='mb-6'>
-              We will be following{' '}
-              <a
-                href='https://visitnebraska.com/coronavirus-information'
+                href='https://www.instagram.com/chaseandkree/?hl=en'
                 target={'_blank'}
                 rel='noreferrer'
                 className='border-b hover:text-opacity-75'
               >
-                current health guidelines
-              </a>{' '}
-              for Lincoln &amp; Omaha at our event. Guidelines change quickly, so check back for
-              updates! Masks will be provided. Vaccinations are strongly recommended.
-            </p>
-            <p className=''>
-              We understand &amp; respect that not everyone will feel comfortable attending an event
-              right now. We love you and we will be excited to celebrate with you whenever and
-              however you feel comfortable.
+                @chaseandkree
+              </a>
             </p>
           </li>
         </ul>

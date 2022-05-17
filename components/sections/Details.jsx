@@ -9,13 +9,13 @@ function Details({ num }) {
     <PageSection color={'black'} id='details'>
       <InnerWrapper color={'sage'}>
         <H2 before={num} numColor='cream-light' className='text-cream-light'>
-          Event Details
+          Location & Time
         </H2>
         <div className='grid grid-cols-5 mt-8 gap-14'>
           <div className='col-span-5 pt-0 mt-0 md:col-span-4 xl:grid-cols-3'>
             <div className='pt-0 mt-0'>
               <H3 className='text-cream-light'>When & Where</H3>
-              <p className='font-semibold text-cream-light font-cormorant'>Monday, November 21st, 2022 / 4:30pm to 10pm</p>
+              <p className='font-semibold text-cream-light font-cormorant'>Monday, November 21st, 2022 / 5pm to 10pm</p>
               <p className='font-semibold font-cormorant text-cream-light'>
                 <span>Remi's Ridge at Hidden Falls</span>
                 <br />

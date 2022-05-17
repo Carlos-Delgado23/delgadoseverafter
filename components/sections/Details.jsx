@@ -8,7 +8,7 @@ function Details({ num }) {
   return (
     <PageSection color={'black'} id='details'>
       <InnerWrapper color={'sage'}>
-        <H2 before={num} numColor='cream-light' className='text-cream-light'>
+        <H2 before={num} numColor='cream-light' color='cream-light'>
           Location & Time
         </H2>
         <div className='grid grid-cols-5 mt-8 gap-14'>

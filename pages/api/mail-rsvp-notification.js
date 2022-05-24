@@ -9,7 +9,7 @@ export default async function sendOnboarding(req, res) {
   <ul>
   <li><strong>Name: </strong>${body.firstguest_name}</li>
   <li><strong>Adults: </strong>${Number(body.adult_count) + 1}</li>
-  <li><strong>Children: </strong>${body.children}</li>
+  <li><strong>Children: </strong>${body.children_count}</li>
   <li><strong>Kids: </strong>${body.kids_count}</li>
   <li><strong>Address:</strong> ${body.firstguest_address}</li>
   <li><strong>Phone:</strong> ${body.firstguest_phone}</li>

@@ -301,7 +301,7 @@ function RSVP() {
       <section>
         <h2 className='mb-8 text-3xl font-semibold text-black font-cormorant'>Thank you for RSVPing!</h2>
         <div>
-          <p className='inline-block p-2 px-6 py-2 text-lg font-semibold duration-300 ease-in-out bg-black rounded-md text-cream-light drop-shadow-sm hover:scale-95 font-cormorant'>
+          <p className='inline-block p-2 px-6 py-2 mb-4 text-lg font-semibold duration-300 ease-in-out bg-black rounded-md text-cream-light drop-shadow-sm hover:scale-95 font-cormorant'>
           <a 
             target="_blank" 
             href="https://calendar.google.com/event?action=TEMPLATE&tmeid=M3JxYW1vMm9mdnVpbnA0NHJqcTdlOWowMGMgY2FybG9zLmRlbGdhZG8uZGV2QG0&tmsrc=carlos.delgado.dev%40gmail.com">
@@ -323,7 +323,7 @@ function RSVP() {
       <h2 className='mb-8 text-3xl font-medium text-black font-cormorant'>Password</h2>
       <input
         type='number'
-        placeholder='Password'
+        placeholder='Password in invitation'
         name='password'
         id='password'
         onChange={(e) => setPassword(e.target.value)}

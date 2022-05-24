@@ -1,28 +1,21 @@
 import mail from '@sendgrid/mail'
 
-mail.setApiKey(process.env.SENDGRID_API_KEY)
+mail.setApiKey(process.env.NEXT_PUBLIC_SENDGRID_API_KEY)
 
 export default async function sendOnboarding(req, res) {
   const body = JSON.parse(req.body)
-  // const msg = {
-  //   to: 'jordan@pixelbakery.com',
-  //   from: 'sender@example.org',
-  //   templateId: 'd-f43daeeaef504760851f727007e0b5d0',
-  //   dynamicTemplateData: {
-  //     subject: 'Testing Templates',
-  //     name: 'Some One',
-  //     city: 'Denver',
-  //   },
-  // }
-
   await mail.send({
     to: `${body.firstguest_email}`,
-    from: { email: 'bergen@opeweeloped.us', name: 'Bergen Johnston' },
+    from: { email: 'c23delgado@gmail.com', name: 'Carlos Delgado III' },
     replyTo: {
-      email: 'bergenjohnston@gmail.com',
-      name: 'Bergen Johnston',
+      email: 'c23delgado@gmail.com',
+      name: 'Carlos Delgado III',
     },
-    templateId: 'd-9ad09a97fbeb4e1ebff3cd143fd5c552',
+    dynamicTemplateData: {
+      "subject": "Confirming your RSVP for Carlos and Seanna's Wedding on Nov 21",
+      "first_name": body.firstguest_name.split(' ')[0]
+    },
+    templateId: process.env.NEXT_PUBLIC_SENDGRID_TEMPLATE_ID,
   })
 
   console.log(res.status(200).json({ status: 'Ok' }))

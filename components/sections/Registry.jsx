@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 function Registry({ num }) {
   return (
-    <PageSection color={'cream'} id='registry'>
+    <PageSection color={'cream-light'} id='registry'>
       <InnerWrapper>
         <H2 before={num} color={'black'}>
           Registry

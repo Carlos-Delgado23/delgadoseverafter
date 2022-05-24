@@ -2,13 +2,12 @@ module.exports = {
   content: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   theme: {
     colors: {
-      sage: 'rgb(121, 180, 183)',
       cream: {
-        light: 'rgb(253, 242, 248)',
-        DEFAULT: 'rgb(220, 164, 150)',
+        light: 'rgb(249, 245, 242)',
       },
-      grey: 'rgb(4, 120, 87)',
-      black: 'rgb(21, 36, 31)',
+      red: 'rgb(239, 0, 75)',
+      grey: 'rgb(110, 103, 104)',
+      black: 'rgb(30, 30, 30)',
     },
 
     extend: {

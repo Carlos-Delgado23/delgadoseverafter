@@ -6,47 +6,47 @@ function Photos() {
   return (
     <PageSection>
       <InnerWrapper>
-        <div className=' h-full grid grid-cols-2 md:grid-cols-4 gap-2 '>
-          <div className='col-span-1 w-full aspect-w-3 aspect-h-5 relative grayscale'>
+        <div className='grid h-full grid-cols-2 gap-2 md:grid-cols-4'>
+          <div className='relative w-full col-span-1 aspect-w-3 aspect-h-5'>
             <Image
               quality={75}
               placeholder='blur'
-              blurDataURL={'/img/jordan-bergen-snow-1.jpg'}
-              src={'/img/jordan-bergen-snow-1.jpg'}
-              alt={'Jordan Lambrecht and Bergen Johnston in the snow'}
+              blurDataURL={'/img/christmas.jpg'}
+              src={'/img/christmas.jpg'}
+              alt={'Carlos and Seanna at a work christmas party'}
               layout={'fill'}
               objectFit={'cover'}
             />
           </div>
-          <div className='col-span-1 w-full aspect-w-3 aspect-h-5 relative grayscale'>
+          <div className='relative w-full col-span-1 aspect-w-3 aspect-h-5'>
             <Image
               quality={75}
               placeholder='blur'
-              blurDataURL={'/img/jordan-bergen-snow-4.jpg'}
-              src={'/img/jordan-bergen-snow-4.jpg'}
-              alt={'Jordan Lambrecht and Bergen Johnston in the snow'}
+              blurDataURL={'/img/backlit.jpg'}
+              src={'/img/backlit.jpg'}
+              alt={'Carlos and Seanna posing for a photo with lights behind them'}
               layout={'fill'}
               objectFit={'cover'}
             />
           </div>
-          <div className='col-span-1 w-full aspect-w-3 aspect-h-5 relative grayscale'>
+          <div className='relative w-full col-span-1 aspect-w-3 aspect-h-5'>
             <Image
               quality={75}
               placeholder='blur'
-              blurDataURL={'/img/jordan-bergen-snow-2.jpg'}
-              src={'/img/jordan-bergen-snow-2.jpg'}
-              alt={'Jordan Lambrecht and Bergen Johnston in the snow'}
+              blurDataURL={'/img/christmas-2.jpg'}
+              src={'/img/christmas-2.jpg'}
+              alt={'Carlos and Seanna at a work christmas party'}
               layout={'fill'}
               objectFit={'cover'}
             />
           </div>
-          <div className='col-span-1 w-full aspect-w-3 aspect-h-5 relative grayscale'>
+          <div className='relative w-full col-span-1 aspect-w-3 aspect-h-5'>
             <Image
               quality={75}
               placeholder='blur'
-              blurDataURL={'/img/jordan-bergen-snow-3.jpg'}
-              src={'/img/jordan-bergen-snow-3.jpg'}
-              alt={'Jordan Lambrecht and Bergen Johnston in the snow'}
+              blurDataURL={'/img/first-photo.jpg'}
+              src={'/img/first-photo.jpg'}
+              alt={'Seanna and Carlos first photo.'}
               layout={'fill'}
               objectFit={'cover'}
             />

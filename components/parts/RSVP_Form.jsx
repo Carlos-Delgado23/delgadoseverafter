@@ -46,6 +46,7 @@ function RSVP() {
   }
 
   const checkPassword = () => {
+    setPasswordError('')
     if (process.env.NEXT_PUBLIC_RSVP_PASSWORD === password) {
       setValidPassword(true)
       setPasswordError('')
@@ -71,7 +72,7 @@ function RSVP() {
   const onSubmit = (data) => {
     SendToMonday(data)
     handleStepCompletion()
-    // SendToSendgrid(data)
+    SendToSendgrid(data)
     resetField('firstguest_address')
     resetField('firstguest_attending')
     resetField('firstguest_name')
@@ -90,7 +91,7 @@ function RSVP() {
   }
 
   return (
-    <div className='z-10 w-full max-w-xl mx-auto my-12 overflow-hidden border-2 border-black rounded-md bg-cream'>
+    <div className='z-10 w-full max-w-xl mx-auto my-12 overflow-hidden border-2 border-black rounded-md bg-cream-light'>
       {formStep < 6 && (
         <div className='w-full h-2 bg-white'>
           <div
@@ -124,7 +125,7 @@ function RSVP() {
     {/* FIRST GUEST – NAME & RSVP */}
     {formStep >= 0 && (
       <section className={formStep === 0 ? 'block' : 'hidden'}>
-        <h2 className='mb-8 text-3xl font-medium text-black font-cormorant'>First Guest</h2>
+        <h2 className='mb-8 text-3xl font-medium text-black font-cormorant'>Your Name</h2>
         <input
           type='text'
           placeholder='Full Name'
@@ -157,7 +158,7 @@ function RSVP() {
           <div className={cn('flex flex-col gap-y-3')}>
             <input
               type='text'
-              placeholder='Home Address'
+              placeholder='Full Home Address'
               id='firstguest_address'
               required
               name='firstguest_address'
@@ -272,7 +273,7 @@ function RSVP() {
     )}
     {formStep === 3 && (
       <section>
-        <h2 className='mb-8 text-3xl font-semibold text-black font-cormorant'>Any Notes?</h2>
+        <h2 className='mb-8 text-3xl font-semibold text-black font-cormorant'>Send a message to the Bride and Groom</h2>
         <textarea
           placeholder='Optional'
           name='notes'
@@ -301,17 +302,17 @@ function RSVP() {
         <h2 className='mb-8 text-3xl font-semibold text-black font-cormorant'>Thank you for RSVPing!</h2>
         <div>
           <p className='inline-block p-2 px-6 py-2 text-lg font-semibold duration-300 ease-in-out bg-black rounded-md text-cream-light drop-shadow-sm hover:scale-95 font-cormorant'>
-            <a href='/CarlosandSeannasHappilyEverAfter.ics' download>
-              Add to iCal (Apple Calendar)
-            </a>
-          </p>
-          <br />
-          <p className='inline-block p-2 px-6 py-2 text-lg font-semibold duration-300 ease-in-out bg-black rounded-md text-cream-light drop-shadow-sm hover:scale-95 font-cormorant'>
           <a 
             target="_blank" 
             href="https://calendar.google.com/event?action=TEMPLATE&tmeid=M3JxYW1vMm9mdnVpbnA0NHJqcTdlOWowMGMgY2FybG9zLmRlbGdhZG8uZGV2QG0&tmsrc=carlos.delgado.dev%40gmail.com">
               Add to Google Calendar
           </a>
+          </p>
+          <br />
+          <p className='inline-block p-2 px-6 py-2 text-lg font-semibold duration-300 ease-in-out bg-black rounded-md text-cream-light drop-shadow-sm hover:scale-95 font-cormorant'>
+            <a href='/CarlosandSeannasHappilyEverAfter.ics' download>
+              Add to iCal (Apple Calendar)
+            </a>
           </p>
         </div>
       </section>
@@ -326,8 +327,9 @@ function RSVP() {
         name='password'
         id='password'
         onChange={(e) => setPassword(e.target.value)}
-        className='font-cormorant font-semibold text-xl text-black text-opacity-75 max-w-3xl mb-3 mt-3 leading-relaxed bg-cream-light block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black'
+        className='font-cormorant font-semibold text-4xl text-black text-opacity-75 max-w-3xl mb-3 mt-3 leading-relaxed bg-cream-light block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black'
       />
+      {passwordError && <p className='text-red'>{passwordError}</p>}
       <div className='flex justify-end font-cormorant semi-bold'>
         <FinishSectionButton onClick={checkPassword} isdisabled={password === (0 || '')}>
           Next &rarr;

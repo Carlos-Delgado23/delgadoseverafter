@@ -213,7 +213,7 @@ function RSVP() {
     )}
     {formStep === 2 && (
       <section>
-        <h2 className='mb-8 text-3xl font-semibold text-black font-cormorant'>Additional Guests</h2>
+        <h2 className='mb-8 text-3xl font-semibold text-black font-cormorant'>Additional Guests <span className='text-xl'>(besides yourself)</span></h2>
         <div className='flex-col w-full my-8'>
           {/* Adults */}
           <div className='flex items-center justify-between w-full'>

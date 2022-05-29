@@ -1,4 +1,4 @@
-import React, { ReactNode, PropsWithChildren } from 'react'
+import React from 'react'
 import cn from 'classnames'
 
 const InnerWrapper = ({ id, color, children, className }) => {

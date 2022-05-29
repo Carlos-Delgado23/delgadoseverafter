@@ -6,10 +6,10 @@ export default async function sendOnboarding(req, res) {
   const body = JSON.parse(req.body)
   await mail.send({
     to: `${body.firstguest_email}`,
-    from: { email: 'c23delgado@gmail.com', name: 'Carlos Delgado III' },
+    from: { email: 'carlosandseanna@delgadoseverafter.us', name: 'Carlos & Seanna' },
     replyTo: {
-      email: 'c23delgado@gmail.com',
-      name: 'Carlos Delgado III',
+      email: 'carlosandseanna@delgadoseverafter.us',
+      name: 'Carlos & Seanna',
     },
     dynamicTemplateData: {
       "subject": "Confirming your RSVP for Carlos and Seanna's Wedding on Nov 21",

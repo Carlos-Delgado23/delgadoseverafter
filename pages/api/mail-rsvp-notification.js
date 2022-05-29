@@ -20,9 +20,9 @@ export default async function sendOnboarding(req, res) {
   `
 
   await mail.send({
-    to: [`c23delgado@gmail.com`],
+    to: [`carlosandseanna@delgadoseverafter.us`],
     from: {
-      email: 'c23delgado@gmail.com',
+      email: 'carlosandseanna@delgadoseverafter.us',
       name: "Carlos and Seanna's Wedding",
     },
     subject: `RSVP: ${body.firstguest_name}`,

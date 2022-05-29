@@ -323,11 +323,11 @@ function RSVP() {
       <h2 className='mb-8 text-3xl font-medium text-black font-cormorant'>Password</h2>
       <input
         type='number'
-        placeholder='Password in invitation'
+        placeholder='Password on invitation'
         name='password'
         id='password'
         onChange={(e) => setPassword(e.target.value)}
-        className='font-cormorant font-semibold text-4xl text-black text-opacity-75 max-w-3xl mb-3 mt-3 leading-relaxed bg-cream-light block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black'
+        className='font-cormorant font-semibold text-2xl text-black text-opacity-75 max-w-3xl mb-3 mt-3 leading-relaxed bg-cream-light block w-full px-0.5 border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black'
       />
       {passwordError && <p className='text-red'>{passwordError}</p>}
       <div className='flex justify-end font-cormorant semi-bold'>

@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Script from 'next/script'
 // Sections
 import Landing from '@sections/Landing'
 import RSVP from '@sections/RSVP'

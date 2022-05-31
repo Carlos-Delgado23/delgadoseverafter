@@ -4,14 +4,15 @@ mail.setApiKey(process.env.NEXT_PUBLIC_SENDGRID_API_KEY)
 
 export default async function sendOnboarding(req, res) {
   const body = JSON.parse(req.body)
+  const address = `${body.firstguest_address}, ${body.firstguest_city}, ${body.firstguest_state} ${body.firstguest_zipcode}`
   const message = `
   <h2>Primary Guest</h2>
   <ul>
   <li><strong>Name: </strong>${body.firstguest_name}</li>
-  <li><strong>Adults: </strong>${Number(body.adult_count) + 1}</li>
+  <li><strong>Adults: </strong>${body.adult_count}</li>
   <li><strong>Children: </strong>${body.children_count}</li>
   <li><strong>Kids: </strong>${body.kids_count}</li>
-  <li><strong>Address:</strong> ${body.firstguest_address}</li>
+  <li><strong>Address:</strong> ${address}</li>
   <li><strong>Phone:</strong> ${body.firstguest_phone}</li>
   <li><strong>Email:</strong> ${body.firstguest_email}</li>
   </ul>

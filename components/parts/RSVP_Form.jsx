@@ -20,7 +20,7 @@ const FinishSectionButton = ({ onClick, isdisabled, children }) => {
 
 function RSVP() {
   const [formStep, setFormStep] = useState(0)
-  const [adults, setAdults] = useState(0)
+  const [adults, setAdults] = useState(1)
   const [children, setChildren] = useState(0)
   const [kids, setKids] = useState(0)
   const [password, setPassword] = useState(0)
@@ -70,10 +70,14 @@ function RSVP() {
     }).then((res) => res.json())
   }
   const onSubmit = (data) => {
+    console.log(data)
     SendToMonday(data)
     handleStepCompletion()
     SendToSendgrid(data)
     resetField('firstguest_address')
+    resetField('firstguest_city')
+    resetField('firstguest_state')
+    resetField('firstguest_zipcode')
     resetField('firstguest_attending')
     resetField('firstguest_name')
     resetField('firstguest_phone')
@@ -158,7 +162,7 @@ function RSVP() {
           <div className={cn('flex flex-col gap-y-3')}>
             <input
               type='text'
-              placeholder='Full Home Address'
+              placeholder='Home Address'
               id='firstguest_address'
               required
               name='firstguest_address'
@@ -169,10 +173,48 @@ function RSVP() {
               border-0 border-b-2 border-gray-200
               focus:ring-0 focus:border-black'
               {...register('firstguest_address', {
-                required: { message: 'Please enter your name.', value: true },
-                minLength: { message: "c'mon that's not your name", value: 3 },
+                required: { message: 'Please enter your address.', value: true },
+                minLength: { message: "c'mon that's not your address", value: 3 },
               })}
             />
+            <input
+              type='text'
+              placeholder='City'
+              id='firstguest_city'
+              required
+              name='firstguest_city'
+              className='font-cormorant font-semibold text-xl text-black text-opacity-75 max-w-3xl mb-3 mt-3 leading-relaxed bg-cream-light block w-full px-0.5 border-0 border-b-2 order-gray-200 focus:ring-0 focus:border-black'
+              {...register('firstguest_city', {
+                required: { message: 'Please enter your city.', value: true },
+                minLength: { message: "c'mon that's not your city", value: 3 },
+              })}
+            />
+            <div className='flex'>
+              <input
+                type='text'
+                placeholder='State'
+                id='firstguest_state'
+                required
+                name='firstguest_state'
+                className='font-cormorant font-semibold text-xl text-black text-opacity-75 max-w-3xl mb-3 mt-3 leading-relaxed bg-cream-light block w-1/2 px-0.5 border-0 border-b-2 order-gray-200 focus:ring-0 focus:border-black'
+                {...register('firstguest_state', {
+                  required: { message: 'Please enter your state.', value: true },
+                  minLength: { message: "c'mon that's not your state", value: 2 },
+                })}
+              />
+              <input
+                type='number'
+                placeholder='Zip Code'
+                id='firstguest_zipcode'
+                required
+                name='firstguest_zipcode'
+                className='font-cormorant font-semibold text-xl text-black text-opacity-75 max-w-3xl mb-3 mt-3 leading-relaxed bg-cream-light block w-1/2 px-0.5 border-0 border-b-2 order-gray-200 focus:ring-0 focus:border-black'
+                {...register('firstguest_zipcode', {
+                  required: { message: 'Please enter your zipcode.', value: true },
+                  minLength: { message: "c'mon that's not your zipcode", value: 3 },
+                })}
+              />
+            </div>
             <input
               type='tel'
               placeholder='Phone Number'
@@ -213,7 +255,7 @@ function RSVP() {
     )}
     {formStep === 2 && (
       <section>
-        <h2 className='mb-8 text-3xl font-semibold text-black font-cormorant'>Additional Guests <span className='text-xl'>(besides yourself)</span></h2>
+        <h2 className='mb-8 text-3xl font-semibold text-black font-cormorant'>Your Party Size</h2>
         <div className='flex-col w-full my-8'>
           {/* Adults */}
           <div className='flex items-center justify-between w-full'>
@@ -221,7 +263,7 @@ function RSVP() {
             <div className='flex justify-center gap-1 my-3 lg:justify-start'>
               <input
                 {...register('adult_count')}
-                min='0'
+                min='1'
                 type='number'
                 id='adult_count'
                 name='adult_count'

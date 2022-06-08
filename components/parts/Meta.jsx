@@ -6,15 +6,15 @@ const Meta = () => {
     <>
       <NextSeo
         title='Carlos & Seanna'
-        description='Carlos Delgado and Seanna M. Libby are getting Married on November 21, 2022!'
+        description='Carlos Delgado and Seanna M. Libby are getting married on November 21, 2022!'
         openGraph={{
-          url: 'https://www.opeweeloped.us',
+          url: 'https://delgadoseverafter.us/',
           type: 'website',
           locale: 'en_IE',
           site_name: 'Carlos & Seanna',
           title: 'Home',
           description:
-            'Carlos Delgado and Seanna M. Libby are getting Married on November 21, 2022!',
+            'Carlos Delgado and Seanna M. Libby are getting married on November 21, 2022!',
           images: [
             {
               url: '/img/kiss-trees.jpg',

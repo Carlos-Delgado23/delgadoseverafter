@@ -18,10 +18,10 @@ export default function Home() {
       <Meta />
       <main>
         <Landing />
-        <Details num={'01'} />
-        <RSVP num={'02'} />
-        <Answers num={'03'} />
-        <Registry num={'04'} />
+        <Answers num={'01'} />
+        <Details num={'02'} />
+        <Registry num={'03'} />
+        <RSVP num={'04'} />
         <Photos />
       </main>
     </div>

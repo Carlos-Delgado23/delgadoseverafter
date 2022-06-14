@@ -72,37 +72,26 @@ function Navigation() {
         <div className='relative flex flex-col justify-center w-full h-full'>
           <nav className='self-center mx-auto'>
             <ul className='grid grid-cols-1 gap-2 text-center text-cream-light'>
-              <Link href={'/#details'} passHref>
-                <li
-                  className='pb-1 text-4xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream-light '
-                  onClick={() => handleHamToggle(false)}
-                  ref={(element) => {
-                    navItems.current[1] = element
-                  }}
-                >
-                  Event Details
-                </li>
-              </Link>
-              <Link href={'/#rsvp'} passHref>
-                <li
-                  className='pb-1 text-3xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream-light '
-                  onClick={() => handleHamToggle(false)}
-                  ref={(element) => {
-                    navItems.current[2] = element
-                  }}
-                >
-                  RSVP
-                </li>
-              </Link>
               <Link href={'/#answers'} passHref>
                 <li
                   className='pb-1 text-3xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream-light '
                   onClick={() => handleHamToggle(false)}
                   ref={(element) => {
-                    navItems.current[3] = element
+                    navItems.current[1] = element
                   }}
                 >
                   Answers
+                </li>
+              </Link>
+              <Link href={'/#details'} passHref>
+                <li
+                  className='pb-1 text-4xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream-light '
+                  onClick={() => handleHamToggle(false)}
+                  ref={(element) => {
+                    navItems.current[2] = element
+                  }}
+                >
+                  Event Details
                 </li>
               </Link>
               <Link href={'/#registry'} passHref>
@@ -110,13 +99,23 @@ function Navigation() {
                   className='pb-1 text-3xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream-light '
                   onClick={() => handleHamToggle(false)}
                   ref={(element) => {
-                    navItems.current[4] = element
+                    navItems.current[3] = element
                   }}
                 >
                   Registry
                 </li>
               </Link>
-
+              <Link href={'/#rsvp'} passHref>
+                <li
+                  className='pb-1 text-3xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream-light '
+                  onClick={() => handleHamToggle(false)}
+                  ref={(element) => {
+                    navItems.current[4] = element
+                  }}
+                >
+                  RSVP
+                </li>
+              </Link>
             </ul>
           </nav>
         </div>

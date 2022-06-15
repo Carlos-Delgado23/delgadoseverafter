@@ -70,7 +70,6 @@ function RSVP() {
     }).then((res) => res.json())
   }
   const onSubmit = (data) => {
-    console.log(data)
     SendToMonday(data)
     handleStepCompletion()
     SendToSendgrid(data)
@@ -362,10 +361,10 @@ function RSVP() {
   </form>
     ) : (
       <section className={formStep === 0 ? 'block' : 'hidden'}>
-      <h2 className='mb-8 text-3xl font-medium text-black font-cormorant'>Password</h2>
+      <h2 className='mb-8 text-3xl font-medium text-black font-cormorant'>Code</h2>
       <input
         type='number'
-        placeholder='Password on invitation'
+        placeholder='Code is on invitation'
         name='password'
         id='password'
         onChange={(e) => setPassword(e.target.value)}

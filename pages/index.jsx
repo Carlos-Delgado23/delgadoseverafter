@@ -21,7 +21,7 @@ export default function Home() {
         <Answers num={'01'} />
         <Details num={'02'} />
         <Registry num={'03'} />
-//         <RSVP num={'04'} />
+          {/*<RSVP num={'04'} />*/}
         <Photos />
       </main>
     </div>

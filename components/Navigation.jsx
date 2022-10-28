@@ -105,17 +105,17 @@ function Navigation() {
                   Registry
                 </li>
               </Link>
-              <Link href={'/#rsvp'} passHref>
-                <li
-                  className='pb-1 text-3xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream-light '
-                  onClick={() => handleHamToggle(false)}
-                  ref={(element) => {
-                    navItems.current[4] = element
-                  }}
-                >
-                  RSVP
-                </li>
-              </Link>
+//               <Link href={'/#rsvp'} passHref>
+//                 <li
+//                   className='pb-1 text-3xl not-italic tracking-widest duration-300 border-b-2 opacity-0 cursor-pointer nav-item hover:italic border-b-black hover:border-b-cream-light '
+//                   onClick={() => handleHamToggle(false)}
+//                   ref={(element) => {
+//                     navItems.current[4] = element
+//                   }}
+//                 >
+//                   RSVP
+//                 </li>
+//               </Link>
             </ul>
           </nav>
         </div>
